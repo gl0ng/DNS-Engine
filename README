@@ -1,0 +1,18 @@
+DNS Engine
+
+Author: Garrett Long
+
+multi-threaded applicaiton that resolves domain names to IP addresses
+
+How to compile program:
+1. Navigate to the folder containing multi-lookup.c.
+2. Run the command "make".
+
+How to run the program:
+1. Navigate to the folder containing multi-lookup.c
+2. Run the command "valgrind ./multi-lookup namefile1.txt namefile2.txt ... results.txt".
+3. You may include as many namefiles as desired but only the first 10 will be resolved by the program
+
+Benchmarks:
+The fastest runtime occured when the number of resolver threads equaled the number of cores.
+
